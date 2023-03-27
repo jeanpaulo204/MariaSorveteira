@@ -14,18 +14,7 @@ const routes = [
       },
     ],
   },
-  {
-    path: '/',
-    component: () => import('@/views/Menu/estoque.vue'),
-    children: [
-      {
-        path: '/estoque',
-        name: 'Estoque',
-
-        component: () => import(/* webpackChunkName: "home" */ '@/views/Menu/estoque.vue'),
-      },
-    ],
-  },
+ 
 ]
 
 const router = createRouter({
